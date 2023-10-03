@@ -7,6 +7,8 @@
     android:background="@color/black"
     tools:context=".MainActivity">
 
+
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -14,6 +16,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         tools:layout_editor_absoluteX="-176dp">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn__next"
+            style="@style/Gray.Button"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="18dp"
+            android:layout_marginTop="16dp"
+            android:onClick="onStyleActivity"
+            android:text="cont  inue"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="17dp" />
 
         <TextView
             android:id="@+id/text_view"
@@ -24,6 +36,8 @@
             android:text="0"
             android:textColor="@color/white"
             android:textSize="80dp" />
+
+
 
     </FrameLayout>
 
@@ -202,6 +216,7 @@
 
 
     </LinearLayout>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
